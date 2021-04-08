@@ -11,6 +11,9 @@ const Nav = () => {
 
 	const renderNav = () => (
 		<nav>
+			<Link to='/'>
+				<div className={getClassName('/')}>Home</div>
+			</Link>
 			<Link to='/d1'>
 				<div className={getClassName('/d1')}>Dataset 1</div>
 			</Link>
