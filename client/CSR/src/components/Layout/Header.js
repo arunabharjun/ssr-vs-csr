@@ -26,6 +26,7 @@ const Header = () => {
 				className='github-icon'
 				href='https://github.com/arunabharjun/ssr-vs-csr'
 				target='_blank'
+				rel="noreferrer"
 			>
 				<IconGithub /> <span className='phone-hide'>Know more</span>
 			</a>

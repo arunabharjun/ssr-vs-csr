@@ -1,6 +1,4 @@
 import React, { useEffect } from 'react';
-import { JsonToTable } from 'react-json-to-table';
-import data from './data';
 import reportWebVitals from './reportWebVitals';
 import Routes from './Routes';
 

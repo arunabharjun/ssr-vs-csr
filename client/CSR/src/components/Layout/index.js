@@ -6,7 +6,7 @@ const Layout = ({ children }) => {
 	const renderFooter = () => (
 		<footer>
 			Developed by
-			<a href='https://arunabharjun.com' target='_blank'>
+			<a href='https://arunabharjun.com' target='_blank' rel='noreferrer'>
 				{' '}
 				Arunabh Arjun
 			</a>

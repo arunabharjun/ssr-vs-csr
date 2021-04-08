@@ -1,12 +1,12 @@
 import React from 'react';
+import { API_DOMAIN } from '../../config';
 import Layout from '../components/Layout';
-import { API_DOMAIN } from '../config';
 
 const Home = () => {
 	return (
 		<React.Fragment>
 			<Layout>
-				{console.log('===>', API_DOMAIN)}
+				{API_DOMAIN}
 				<h1>Home</h1>
 			</Layout>
 		</React.Fragment>
