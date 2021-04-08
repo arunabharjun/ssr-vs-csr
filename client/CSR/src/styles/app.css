@@ -23,8 +23,9 @@ body {
 }
 
 * {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
   outline: none;
   -webkit-transition: var(--transition);
   transition: var(--transition);
@@ -131,7 +132,9 @@ header .github-icon {
 }
 
 main {
-  height: calc(100vh - 3 * var(--nav-height) - 12px);
+  height: calc(100vh - 3 * var(--nav-height) - 36px);
+  padding: 0 24px;
+  overflow: auto;
 }
 
 footer {
@@ -194,6 +197,7 @@ nav .nav-item {
   font-size: 0.8em;
   font-weight: 700;
   color: var(--muted-clr);
+  white-space: nowrap;
 }
 
 nav .nav-item:hover {
@@ -204,6 +208,7 @@ nav .nav-item:hover {
 nav .nav-item-active {
   border: solid 3px var(--blue);
   color: var(--blue);
+  padding: 0 9px;
 }
 
 /* small devices */
