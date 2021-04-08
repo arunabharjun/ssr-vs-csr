@@ -2,6 +2,7 @@ import React, { useEffect } from 'react';
 import { JsonToTable } from 'react-json-to-table';
 import data from './data';
 import reportWebVitals from './reportWebVitals';
+import Routes from './Routes';
 
 const App = () => {
 	useEffect(() => {
@@ -11,7 +12,7 @@ const App = () => {
 
 	return (
 		<React.Fragment>
-			<JsonToTable json={data} />
+			<Routes />
 		</React.Fragment>
 	);
 };
