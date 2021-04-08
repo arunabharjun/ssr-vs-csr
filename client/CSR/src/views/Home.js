@@ -6,7 +6,6 @@ const Home = () => {
 	return (
 		<React.Fragment>
 			<Layout>
-				{console.log('===>', API_DOMAIN)}
 				<h1>Home</h1>
 			</Layout>
 		</React.Fragment>

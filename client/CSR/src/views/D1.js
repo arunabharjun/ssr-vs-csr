@@ -1,14 +1,36 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { JsonToTable } from 'react-json-to-table';
 import Layout from '../components/Layout';
-import data from '../data';
+import { getDataset1 } from '../helpers/fetchApi';
 
 const D1 = () => {
+	const [
+		d1,
+		setD1
+	] = useState({});
+
+	const [
+		loading,
+		setLoading
+	] = useState(true);
+
+	useEffect(() => {
+		getDataset1()
+			.then((data) => {
+				setLoading(false);
+				setD1(data.data);
+			})
+			.catch((error) => {
+				setLoading(false);
+				console.log(error);
+			});
+	}, []);
+
 	return (
 		<React.Fragment>
 			<Layout>
-				<h1>Dataset 1</h1>
-				<JsonToTable json={data} />
+				{loading && 'loading dataset 1'}
+				{!loading && <JsonToTable json={d1} />}
 			</Layout>
 		</React.Fragment>
 	);

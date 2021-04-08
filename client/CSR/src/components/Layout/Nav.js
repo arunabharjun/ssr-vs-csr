@@ -18,7 +18,7 @@ const Nav = () => {
 				<div className={getClassName('/d2')}>Dataset 2</div>
 			</Link>
 			<Link to='/d12'>
-				<div className={getClassName('/d12')}>Dataset 1 * 2</div>
+				<div className={getClassName('/d12')}>Dataset 1 + 2</div>
 			</Link>
 		</nav>
 	);

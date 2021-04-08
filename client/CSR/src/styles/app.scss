@@ -109,7 +109,8 @@ header {
 
 main {
 	height: calc(100vh - 3 * var(--nav-height) - 36px);
-	padding: 0 24px;
+	width: calc(100vw - 48px);
+	margin: 0 auto;
 	overflow: auto;
 }
 
