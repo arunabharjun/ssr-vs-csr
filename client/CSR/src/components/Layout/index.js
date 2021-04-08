@@ -1,10 +1,24 @@
 import React from 'react';
+import Header from './Header';
+import Nav from './Nav';
 
 const Layout = ({ children }) => {
+	const renderFooter = () => (
+		<footer>
+			Developed by
+			<a href='https://arunabharjun.com' target='_blank'>
+				{' '}
+				Arunabh Arjun
+			</a>
+		</footer>
+	);
+
 	return (
 		<React.Fragment>
-			<h1>Layout</h1>
-			{children}
+			<Header />
+			<Nav />
+			<main>{children}</main>
+			{renderFooter()}
 		</React.Fragment>
 	);
 };
