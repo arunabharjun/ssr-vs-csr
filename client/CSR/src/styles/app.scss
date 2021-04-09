@@ -11,6 +11,8 @@
 	--txt-clr: #111111;
 	--muted-clr: #5c5c5c;
 	--icon-fil: rgba(0, 0, 0, 0.08);
+	--loading-bg: #4e52553f;
+	--loading-bg-static: #959fa71c;
 	--transition: all 0.4s !important;
 }
 
@@ -167,6 +169,79 @@ nav {
 		color: var(--blue);
 		padding: 0 9px;
 	}
+}
+
+.loader {
+	width: 100%;
+	height: 45%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: var(--muted-clr);
+	text-transform: uppercase;
+	font-weight: 700;
+	font-size: 0.8rem;
+	margin-bottom: 12px;
+}
+
+.animate-loading {
+	-webkit-animation: shimmer 2s infinite linear;
+	animation: shimmer 2s infinite linear;
+	background: -webkit-gradient(
+		linear,
+		left top,
+		right top,
+		color-stop(4%, var(--loading-bg-static)),
+		color-stop(25%, var(--loading-bg)),
+		color-stop(36%, var(--loading-bg-static))
+	);
+	background: linear-gradient(
+		to right,
+		var(--loading-bg-static) 4%,
+		var(--loading-bg) 25%,
+		var(--loading-bg-static) 36%
+	);
+	background-size: 1000px 100%;
+	border-radius: 5px;
+}
+
+@-webkit-keyframes shimmer {
+	0% {
+		background-position: -1000px 0;
+	}
+	100% {
+		background-position: 1000px 0;
+	}
+}
+
+@keyframes shimmer {
+	0% {
+		background-position: -1000px 0;
+	}
+	100% {
+		background-position: 1000px 0;
+	}
+}
+
+@keyframes shimmer {
+	0% {
+		background-position: -1000px 0;
+	}
+	100% {
+		background-position: 1000px 0;
+	}
+}
+
+.error {
+	background-color: rgb(255, 214, 216);
+	color: rgb(172, 23, 35);
+	width: fit-content;
+	padding: 10px 15px;
+	text-transform: uppercase;
+	font-size: 0.8rem;
+	font-weight: 600;
+	border-radius: 8px;
+	margin-bottom: 12px;
 }
 
 /* small devices */
