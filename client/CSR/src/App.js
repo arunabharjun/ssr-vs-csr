@@ -1,13 +1,7 @@
-import React, { useEffect } from 'react';
-import reportWebVitals from './reportWebVitals';
+import React from 'react';
 import Routes from './Routes';
 
 const App = () => {
-	useEffect(() => {
-		console.log('React Web Vitals');
-		reportWebVitals(console.table);
-	}, []);
-
 	return (
 		<React.Fragment>
 			<Routes />
