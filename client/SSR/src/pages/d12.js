@@ -17,7 +17,7 @@ const D12 = ({ data1, data2 }) => {
 
 export default D12;
 
-export async function getStaticProps(context) {
+export async function getServerSideProps(context) {
 	return {
 		props: { data1: ds1, data2: ds2 } // will be passed to the page component as props
 	};
