@@ -14,14 +14,16 @@ const Nav = () => {
 			<Link to='/'>
 				<div className={getClassName('/')}>Home</div>
 			</Link>
-			<Link to='/d1'>
-				<div className={getClassName('/d1')}>Dataset 1</div>
+			<Link to='/csr/dataset_1'>
+				<div className={getClassName('/csr/dataset_1')}>Dataset 1</div>
 			</Link>
-			<Link to='/d2'>
-				<div className={getClassName('/d2')}>Dataset 2</div>
+			<Link to='/csr/dataset_2'>
+				<div className={getClassName('/csr/dataset_2')}>Dataset 2</div>
 			</Link>
-			<Link to='/d12'>
-				<div className={getClassName('/d12')}>Dataset 1 + 2</div>
+			<Link to='/csr/dataset_1_2'>
+				<div className={getClassName('/csr/dataset_1_2')}>
+					Dataset 1 + 2
+				</div>
 			</Link>
 		</nav>
 	);

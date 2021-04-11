@@ -1,29 +1,35 @@
 import React from 'react';
-import MUIDataTable from 'mui-datatables';
+import styles from './table_style';
 
 const Table = ({ data = {}, title = 'Data Table' }) => {
 	const columns = Object.keys(data[0]);
-	const options = {
-		pagination: false,
-		// count: 20,
-		download: false,
-		search: false,
-		print: false,
-		filter: false,
-		viewColumns: false,
-		selectableRowsHeader: false,
-		selectableRows: 'none',
-		sort: false,
-		responsive: 'standard'
-	};
 	return (
 		<React.Fragment>
-			<MUIDataTable
-				title={title}
-				data={data}
-				columns={columns}
-				options={options}
-			/>
+			<h4 style={styles.tableTitle}>{title}</h4>
+			<table style={styles.dataTable}>
+				<tr>
+					{columns.map((item, i) => {
+						return (
+							<th style={styles.th} key={i}>
+								{item}
+							</th>
+						);
+					})}
+				</tr>
+				{data.map((row, i) => {
+					return (
+						<tr key={i} style={i % 2 === 0 ? styles.tr_even : {}}>
+							{Object.keys(row).map((item, i) => {
+								return (
+									<td style={styles.td} key={i}>
+										{row[item]}
+									</td>
+								);
+							})}
+						</tr>
+					);
+				})}
+			</table>
 		</React.Fragment>
 	);
 };
