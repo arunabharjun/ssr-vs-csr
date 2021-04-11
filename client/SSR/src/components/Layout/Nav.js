@@ -14,14 +14,35 @@ const Nav = () => {
 			<Link href='/'>
 				<div className={getClassName('/')}>Home</div>
 			</Link>
-			<Link href='/d1'>
-				<div className={getClassName('/d1')}>Dataset 1</div>
+			<Link href='/static_ssr/dataset_1'>
+				<div className={getClassName('/static_ssr/dataset_1')}>
+					Static Dataset 1
+				</div>
 			</Link>
-			<Link href='/d2'>
-				<div className={getClassName('/d2')}>Dataset 2</div>
+			<Link href='/static_ssr/dataset_2'>
+				<div className={getClassName('/static_ssr/dataset_2')}>
+					Static Dataset 2
+				</div>
 			</Link>
-			<Link href='/d12'>
-				<div className={getClassName('/d12')}>Dataset 1 + 2</div>
+			<Link href='/static_ssr/dataset_1_2'>
+				<div className={getClassName('/static_ssr/dataset_1_2')}>
+					Static Dataset 1 + 2
+				</div>
+			</Link>
+			<Link href='/onRequest_ssr/dataset_1'>
+				<div className={getClassName('/onRequest_ssr/dataset_1')}>
+					On Request Dataset 1
+				</div>
+			</Link>
+			<Link href='/onRequest_ssr/dataset_2'>
+				<div className={getClassName('/onRequest_ssr/dataset_2')}>
+					On Request Dataset 2
+				</div>
+			</Link>
+			<Link href='/onRequest_ssr/dataset_1_2'>
+				<div className={getClassName('/onRequest_ssr/dataset_1_2')}>
+					On Request Dataset 1 + 2
+				</div>
 			</Link>
 		</nav>
 	);
