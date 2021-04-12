@@ -4,11 +4,12 @@ import Layout from '../../components/Layout';
 import Loader from '../../components/Loader';
 import Table from '../../components/Table';
 import useFetch from '../../hooks/useFetch';
+import ds1 from '../../assets/data/d1.json';
 import { getDataset2 } from '../../helpers/fetchApi';
 
-const DynamicD2 = () => {
+const DynamicD2StaticD1 = ({ data1 }) => {
 	const [
-		data,
+		data2,
 		loading,
 		error
 	] = useFetch(getDataset2);
@@ -22,12 +23,19 @@ const DynamicD2 = () => {
 						Something went wrong while fetching <b>Dataset 2</b>
 					</Error>
 				)}
-				{data &&
+				<Table data={data1} title='Dataset 1' />
+				{data2 &&
 				!loading &&
-				!error && <Table data={data} title='Dataset 2' />}
+				!error && <Table data={data2} title='Dataset 2' />}
 			</Layout>
 		</React.Fragment>
 	);
 };
 
-export default DynamicD2;
+export default DynamicD2StaticD1;
+
+export async function getStaticProps(context) {
+	return {
+		props: { data1: ds1 } // will be passed to the page component as props
+	};
+}

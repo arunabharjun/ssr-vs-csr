@@ -6,7 +6,7 @@ import Table from '../../components/Table';
 import useFetch from '../../hooks/useFetch';
 import { getDataset1, getDataset2 } from '../../helpers/fetchApi';
 
-const DynamicD1 = () => {
+const DynamicD12 = () => {
 	const [
 		data1,
 		loading1,
@@ -44,4 +44,4 @@ const DynamicD1 = () => {
 	);
 };
 
-export default DynamicD1;
+export default DynamicD12;
