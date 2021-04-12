@@ -2,7 +2,7 @@ import React from 'react';
 import styles from './table_style';
 
 const Table = ({ data = {}, title = 'Data Table' }) => {
-	const columns = Object.keys(data[0]);
+	const columns = Object.keys(data[2]);
 	return (
 		<React.Fragment>
 			<h4 style={styles.tableTitle}>{title}</h4>
