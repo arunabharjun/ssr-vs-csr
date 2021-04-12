@@ -3,7 +3,7 @@ import Error from '../../components/Error';
 import Layout from '../../components/Layout';
 import Loader from '../../components/Loader';
 import Table from '../../components/Table';
-import useFetch from '../../components/useFetch';
+import useFetch from '../../hooks/useFetch';
 import { getDataset2 } from '../../helpers/fetchApi';
 
 const DynamicD1 = () => {
