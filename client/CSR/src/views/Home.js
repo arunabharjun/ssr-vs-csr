@@ -1,11 +1,12 @@
 import React from 'react';
+import HomeView from '../components/Home';
 import Layout from '../components/Layout';
 
 const Home = () => {
 	return (
 		<React.Fragment>
-			<Layout>
-				<h1>Home</h1>
+			<Layout withoutBorder>
+				<HomeView />
 			</Layout>
 		</React.Fragment>
 	);

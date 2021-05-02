@@ -4,7 +4,7 @@ import reportWebVitals from '../../reportWebVitals';
 import Header from './Header';
 import Nav from './Nav';
 
-const Layout = ({ children }) => {
+const Layout = ({ children, withoutBorder = false }) => {
 	const currPath = useLocation().pathname;
 
 	useEffect(() => {
@@ -26,7 +26,9 @@ const Layout = ({ children }) => {
 		<React.Fragment>
 			<Header />
 			<Nav />
-			<main>{children}</main>
+			<main style={withoutBorder ? { border: 'none' } : {}}>
+				{children}
+			</main>
 			{renderFooter()}
 		</React.Fragment>
 	);
