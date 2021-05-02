@@ -1,17 +1,8 @@
-import React, { useEffect } from 'react';
-import { useLocation } from 'react-router-dom';
-import reportWebVitals from '../../reportWebVitals';
+import React from 'react';
 import Header from './Header';
 import Nav from './Nav';
 
 const Layout = ({ children, withoutBorder = false }) => {
-	const currPath = useLocation().pathname;
-
-	useEffect(() => {
-		console.log(currPath, 'Web Vitals -');
-		reportWebVitals(console.table);
-	}, []);
-
 	const renderFooter = () => (
 		<footer>
 			Developed by
