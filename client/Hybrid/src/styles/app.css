@@ -353,6 +353,19 @@ nav .nav-item-active {
           box-shadow: var(--nav-shadow);
 }
 
+.safe-msg {
+  margin-top: 20px;
+  background-color: #d3f1cd;
+  color: #006326;
+  width: 100%;
+  padding: 10px 15px;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  font-weight: 700;
+  border-radius: 8px;
+  margin-bottom: 12px;
+}
+
 /* small devices */
 @media only screen and (max-width: 775px) {
   .phone-hide {

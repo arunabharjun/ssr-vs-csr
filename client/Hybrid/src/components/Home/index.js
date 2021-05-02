@@ -2,9 +2,12 @@ import React from 'react';
 import Error from '../Error';
 
 const HomeView = () => {
+	const renderSafeMsg = () => (
+		<div className='safe-msg'>Note : This page is safe to view</div>
+	);
+
 	const renderError = () => (
 		<React.Fragment>
-			<br />
 			<Error>
 				<b>CAUTION : Potential crash & browser freeze warning</b> <br />{' '}
 				<br /> This web-app is a part of a research work and all the
@@ -62,6 +65,7 @@ const HomeView = () => {
 
 	const renderHomeView = () => (
 		<React.Fragment>
+			{renderSafeMsg()}
 			{renderError()}
 			<div className='app-info-container'>
 				{renderAbout()}
