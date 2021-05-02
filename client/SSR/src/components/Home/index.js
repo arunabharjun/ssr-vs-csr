@@ -23,7 +23,7 @@ const HomeView = () => {
 			<div>
 				<p className=''>There are two other parts of this app -</p>
 				<ol>
-					<li>SSR : Server Side Rendering</li>
+					<li>CSR : Client Side Rendering</li>
 					<li>Hybrid Rendering</li>
 				</ol>
 				<p className=''>Find them in the links below - </p>
@@ -34,7 +34,7 @@ const HomeView = () => {
 	const renderLinks = () => (
 		<div className='links-container'>
 			<a href='about:blank' target='_blank' rel='noopener noreferrer'>
-				<div>Go to SSR</div>
+				<div>Go to CSR</div>
 			</a>
 			<a href='about:blank' target='_blank' rel='noopener noreferrer'>
 				<div>Go to HYBRID REDERING</div>
