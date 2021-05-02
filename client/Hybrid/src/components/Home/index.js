@@ -22,7 +22,7 @@ const HomeView = () => {
 
 	const renderAbout = () => (
 		<React.Fragment>
-			<h1>DYNAMIC RENDERING</h1>
+			<h1>HYBRID RENDERING</h1>
 			<div>
 				<p className=''>There are two other parts of this app -</p>
 				<ol>

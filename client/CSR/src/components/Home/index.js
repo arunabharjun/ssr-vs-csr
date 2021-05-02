@@ -22,12 +22,12 @@ const HomeView = () => {
 
 	const renderAbout = () => (
 		<React.Fragment>
-			<h1>DYNAMIC RENDERING</h1>
+			<h1>CSR : CLIENT SIDE RENDERING</h1>
 			<div>
 				<p className=''>There are two other parts of this app -</p>
 				<ol>
-					<li>CSR : Client Side Rendering</li>
 					<li>SSR : Server Side Rendering</li>
+					<li>Hybrid Rendering</li>
 				</ol>
 				<p className=''>Find them in the links below - </p>
 			</div>
@@ -37,10 +37,10 @@ const HomeView = () => {
 	const renderLinks = () => (
 		<div className='links-container'>
 			<a href='about:blank' target='_blank' rel='noopener noreferrer'>
-				<div>Go to CSR</div>
+				<div>Go to SSR</div>
 			</a>
 			<a href='about:blank' target='_blank' rel='noopener noreferrer'>
-				<div>Go to SSR</div>
+				<div>Go to Hybrid Rendering</div>
 			</a>
 		</div>
 	);
@@ -48,17 +48,13 @@ const HomeView = () => {
 	const renderAppInfo = () => (
 		<div className='app-info'>
 			<p className=''>
-				This part of the web-app demnostrates the effect of hybrid
+				This part of the web-app demnostrates the effect of client side
 				rendering through the combination of the following -
 			</p>
 			<ol>
-				<li>Dynamic Dataset 1</li>
-				<li>Dynamic Dataset 2</li>
-				<li>Dynamic Dataset 1 + Dataset 2</li>
-				<li>Static Generated Dataset 1 + Dynamic Dataset 2</li>
-				<li>Static Generated Dataset 2 + Dynamic Dataset 1</li>
-				<li>On Request Generated Dataset 1 + Dynamic Dataset 2</li>
-				<li>On Request Generated Dataset 2 + Dynamic Dataset 1</li>
+				<li>Dataset 1</li>
+				<li>Dataset 2</li>
+				<li>Dataset 1 + Dataset 2</li>
 			</ol>
 		</div>
 	);
