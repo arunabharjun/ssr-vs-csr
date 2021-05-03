@@ -1,4 +1,4 @@
-# Client Side Rendered App
+# Server Side Rendered App
 
 ## ▶️ Getting Started
 
