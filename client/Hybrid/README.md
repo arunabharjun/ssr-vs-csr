@@ -21,6 +21,7 @@ NEXT_PUBLIC_DATASET_2_END_POINT = /dataset2
 4. When in production, simply replace the value of NEXT_PUBLIC_ENV with 'PROD'.
 
 5. When in development environment, make sure that the appropriate backend service is active on http://localhost:8000/api
+    * Checkout [README file for BACKEND](https://github.com/arunabharjun/ssr-vs-csr/blob/main/backend/README.md) to learn how to get started with the backend
 
 6. Using terminal from 'client/Hybrid' directory, install the dependencies
 ```
